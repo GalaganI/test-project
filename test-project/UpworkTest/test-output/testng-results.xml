@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestTaskTwo" duration-ms="38895" started-at="2018-12-11T23:44:02Z" finished-at="2018-12-11T23:44:41Z">
+    <groups>
+    </groups>
+    <test name="tests.TestTaskTwo" duration-ms="38895" started-at="2018-12-11T23:44:02Z" finished-at="2018-12-11T23:44:41Z">
+      <class name="tests.TestTaskTwo">
+        <test-method status="PASS" signature="beforeTestClass()[pri:0, instance:tests.TestTaskTwo@1593948d]" name="beforeTestClass" is-config="true" duration-ms="4911" started-at="2018-12-11T23:44:02Z" finished-at="2018-12-11T23:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestClass -->
+        <test-method status="PASS" signature="testTopSearchIsFunctional()[pri:0, instance:tests.TestTaskTwo@1593948d]" name="testTopSearchIsFunctional" duration-ms="33793" started-at="2018-12-11T23:44:07Z" description="test that searched element is finally found on any iteration." finished-at="2018-12-11T23:44:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTopSearchIsFunctional -->
+        <test-method status="PASS" signature="afterTestClass()[pri:0, instance:tests.TestTaskTwo@1593948d]" name="afterTestClass" is-config="true" duration-ms="179" started-at="2018-12-11T23:44:41Z" finished-at="2018-12-11T23:44:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestClass -->
+      </class> <!-- tests.TestTaskTwo -->
+    </test> <!-- tests.TestTaskTwo -->
+  </suite> <!-- TestTaskTwo -->
+</testng-results>
