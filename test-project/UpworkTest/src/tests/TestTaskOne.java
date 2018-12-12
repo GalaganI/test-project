@@ -13,7 +13,6 @@ import menuObjects.MainMenu;
 import menuObjects.TelefonySections;
 import menuObjects.TelefonyTvIelektronikaCategories;
 import searchObjects.SearchResults;
-import searchObjects.TopNavigationAndSearch;
 import utils.SeleniumWebDriver;
 import utils.SeleniumWebDriver.Browsers;
 import utils.Wait;
@@ -21,14 +20,12 @@ import utils.Wait;
 public class TestTaskOne {
 
 	 private SeleniumWebDriver selenium ;
-	 private String searchedPhoneName = "Motorola Moto Z";
 	 private FilterParametersForm filter ;
 	 private MainMenu menu ;
 	 private WebDriver driver;
 	 private TelefonyTvIelektronikaCategories categories ; 
 	 private TelefonySections sections ;
 	 private SearchResults searchResults ;
-	 private TopNavigationAndSearch topNavigation;
 	 private String expectedTag = "novelty";
 	
 	@BeforeClass
@@ -41,7 +38,6 @@ public class TestTaskOne {
 	     categories = new TelefonyTvIelektronikaCategories();
 	     sections = new TelefonySections();
 	     searchResults = new SearchResults(driver);
-	     topNavigation = new TopNavigationAndSearch(driver);
 	}
 	@Test(description="Test if the first element has a label \"new\" and all \"new\" items on the page appear next to each other, while all items without such label are further down.")
 		public void testFilteredElementsHaveCorrectTag() throws InterruptedException {
