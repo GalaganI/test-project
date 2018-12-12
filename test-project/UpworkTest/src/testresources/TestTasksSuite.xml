@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestTaskTwo" verbose="1">
+<suite name="TestTasksSuite" verbose="1">
 	<test verbose="2" name="tests.TestTaskTwo" preserve-order="true" annotations="JDK">
 		<classes>
 			<class name="tests.TestTaskTwo"/>
+		</classes>
+	</test>
+	<test verbose="2" name="tests.TestTaskOne" preserve-order="true" annotations="JDK">
+		<classes>
+			<class name="tests.TestTaskOne"/>
 		</classes>
 	</test>
 

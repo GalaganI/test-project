@@ -44,7 +44,7 @@ public class TestTaskTwo {
 	}
 	
 	@Test(description="test that searched element is finally found on any iteration.")
-	public void testTopSearchIsFunctional() throws InterruptedException {
+	public void testTopSearchIsFunctional() throws InterruptedException{
 		String expectedTitle=null;
 		boolean exists = false;
 		//Press on «Смартфоны, ТВ и электроника».

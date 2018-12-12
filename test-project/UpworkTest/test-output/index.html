@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-TestTaskTwo">
-              <span class="suite-name border-passed">TestTaskTwo</span>
+            <a href="#" class="navigator-link" panel-name="suite-TestTasksSuite">
+              <span class="suite-name border-failed">TestTasksSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-TestTaskTwo">
-                    <span>TestTaskTwo.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestTasksSuite">
+                    <span>TestTasksSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-TestTaskTwo">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestTasksSuite">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-TestTaskTwo">
+                  <a href="#" class="navigator-link " panel-name="group-TestTasksSuite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-TestTaskTwo">
+                  <a href="#" class="navigator-link " panel-name="times-TestTasksSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-TestTaskTwo">
+                  <a href="#" class="navigator-link " panel-name="reporter-TestTasksSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestTaskTwo">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestTasksSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-TestTaskTwo">
+                  <a href="#" class="navigator-link " panel-name="chronological-TestTasksSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestTasksSuite" class="hide-methods failed suite-TestTasksSuite"> (hide)</a> <!-- hide-methods failed suite-TestTasksSuite -->
+                      <a href="#" panel-name="suite-TestTasksSuite" class="show-methods failed suite-TestTasksSuite"> (show)</a> <!-- show-methods failed suite-TestTasksSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestTasksSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestTasksSuite" title="tests.TestTaskOne" hash-for-method="testFilteredElementsHaveCorrectTag">testFilteredElementsHaveCorrectTag</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestTasksSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-TestTaskTwo" class="hide-methods passed suite-TestTaskTwo"> (hide)</a> <!-- hide-methods passed suite-TestTaskTwo -->
-                      <a href="#" panel-name="suite-TestTaskTwo" class="show-methods passed suite-TestTaskTwo"> (show)</a> <!-- show-methods passed suite-TestTaskTwo -->
+                      <a href="#" panel-name="suite-TestTasksSuite" class="hide-methods passed suite-TestTasksSuite"> (hide)</a> <!-- hide-methods passed suite-TestTasksSuite -->
+                      <a href="#" panel-name="suite-TestTasksSuite" class="show-methods passed suite-TestTasksSuite"> (show)</a> <!-- show-methods passed suite-TestTasksSuite -->
                     </span>
-                    <div class="method-list-content passed suite-TestTaskTwo">
+                    <div class="method-list-content passed suite-TestTasksSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestTaskTwo" title="tests.TestTaskTwo" hash-for-method="testTopSearchIsFunctional">testTopSearchIsFunctional</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestTasksSuite" title="tests.TestTaskTwo" hash-for-method="testTopSearchIsFunctional">testTopSearchIsFunctional</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-TestTaskTwo -->
+                    </div> <!-- method-list-content passed suite-TestTasksSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,8 +130,57 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-TestTaskTwo" class="panel TestTaskTwo">
-          <div class="suite-TestTaskTwo-class-passed">
+        <div panel-name="suite-TestTasksSuite" class="panel TestTasksSuite">
+          <div class="suite-TestTasksSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.TestTaskOne</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFilteredElementsHaveCorrectTag">
+                  </a> <!-- testFilteredElementsHaveCorrectTag -->
+                  <span class="method-name">testFilteredElementsHaveCorrectTag</span>
+                  <div class="stack-trace">java.lang.AssertionError: Was found element with tag new expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at tests.TestTaskOne.testFilteredElementsHaveCorrectTag(TestTaskOne.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Test if the first element has a label "new" and all "new" items on the page appear next to each other, while all items without such label are further down.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestTasksSuite-class-failed -->
+          <div class="suite-TestTasksSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.TestTaskTwo</span>
@@ -133,89 +196,101 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestTaskTwo-class-passed -->
-        </div> <!-- panel TestTaskTwo -->
-        <div panel-name="test-xml-TestTaskTwo" class="panel">
+          </div> <!-- suite-TestTasksSuite-class-passed -->
+        </div> <!-- panel TestTasksSuite -->
+        <div panel-name="test-xml-TestTasksSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/irinagalagan/Downloads/test-project/test-project/UpworkTest/src/testresources/TestTaskTwo.xml</span>
+            <span class="header-content">/Users/irinagalagan/Downloads/test-project/test-project/UpworkTest/src/testresources/TestTasksSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;TestTaskTwo&quot;&gt;
+&lt;suite name=&quot;TestTasksSuite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;tests.TestTaskTwo&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.TestTaskTwo&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- tests.TestTaskTwo --&gt;
-&lt;/suite&gt; &lt;!-- TestTaskTwo --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;tests.TestTaskOne&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TestTaskOne&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- tests.TestTaskOne --&gt;
+&lt;/suite&gt; &lt;!-- TestTasksSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-TestTaskTwo" class="panel">
+        <div panel-name="testlist-TestTasksSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for TestTaskTwo</span>
+            <span class="header-content">Tests for TestTasksSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
                 <span class="test-name">tests.TestTaskTwo (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">tests.TestTaskOne (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-TestTaskTwo" class="panel">
+        <div panel-name="group-TestTasksSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for TestTaskTwo</span>
+            <span class="header-content">Groups for TestTasksSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-TestTaskTwo" class="panel">
+        <div panel-name="times-TestTasksSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for TestTaskTwo</span>
+            <span class="header-content">Times for TestTasksSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_TestTaskTwo');
-function tableData_TestTaskTwo() {
+suiteTableInitFunctions.push('tableData_TestTasksSuite');
+function tableData_TestTasksSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testTopSearchIsFunctional')
-data.setCell(0, 2, 'tests.TestTaskTwo')
-data.setCell(0, 3, 33793);
-window.suiteTableData['TestTaskTwo']= { tableData: data, tableDiv: 'times-div-TestTaskTwo'}
+data.setCell(0, 1, 'testFilteredElementsHaveCorrectTag')
+data.setCell(0, 2, 'tests.TestTaskOne')
+data.setCell(0, 3, 480901);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testTopSearchIsFunctional')
+data.setCell(1, 2, 'tests.TestTaskTwo')
+data.setCell(1, 3, 35712);
+window.suiteTableData['TestTasksSuite']= { tableData: data, tableDiv: 'times-div-TestTasksSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
-              <div id="times-div-TestTaskTwo">
-              </div> <!-- times-div-TestTaskTwo -->
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-TestTasksSuite">
+              </div> <!-- times-div-TestTasksSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-TestTaskTwo" class="panel">
+        <div panel-name="reporter-TestTasksSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for TestTaskTwo</span>
+            <span class="header-content">Reporter output for TestTasksSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-TestTaskTwo" class="panel">
+        <div panel-name="ignored-methods-TestTasksSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-TestTaskTwo" class="panel">
+        <div panel-name="chronological-TestTasksSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -228,11 +303,28 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testTopSearchIsFunctional</span>
-                <span class="method-start">4916 ms</span>
+                <span class="method-start">4693 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterTestClass</span>
-                <span class="method-start">38710 ms</span>
+                <span class="method-start">40406 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TestTaskOne</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeTestClass</span>
+                <span class="method-start">40789 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFilteredElementsHaveCorrectTag</span>
+                <span class="method-start">46201 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterTestClass</span>
+                <span class="method-start">527103 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

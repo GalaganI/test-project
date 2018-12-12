@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestTaskTwo]">
-  <test thread-count="5" name="tests.TestTaskTwo(failed)">
+  <test thread-count="5" name="tests.TestTaskOne(failed)">
     <classes>
-      <class name="tests.TestTaskTwo">
+      <class name="tests.TestTaskOne">
         <methods>
-          <include name="afterTestClass"/>
-          <include name="testTopSearchIsFunctional"/>
           <include name="beforeTestClass"/>
+          <include name="testFilteredElementsHaveCorrectTag"/>
+          <include name="afterTestClass"/>
         </methods>
-      </class> <!-- tests.TestTaskTwo -->
+      </class> <!-- tests.TestTaskOne -->
     </classes>
-  </test> <!-- tests.TestTaskTwo(failed) -->
+  </test> <!-- tests.TestTaskOne(failed) -->
 </suite> <!-- Failed suite [TestTaskTwo] -->

@@ -13,7 +13,7 @@ import utils.Wait;
 public class SearchResults {
 	
 	public static final String SEARCH_ELEMENT_TOP ="data-view_type=[\"catalog_with_hover\"]";
-	public static final String MORE_GOODS = "div[name='more_goods']";
+	public static final String MORE_GOODS = "div[name=\"more_goods\"]";
 	public static final String MORE_GOODS2 = "a.g-i-more-link";
 	public static final String PROMO_TAG = ".g-tag";
 	public static final String TITLE = ".g-i-tile-i-title";
